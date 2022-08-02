@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accrued Interest Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="accruedInterestRateRadio" name="variables">
+  <label for="accruedInterestRateRadio">Accrued Interest Rate</label>
+
+  <input type="radio" id="accruedInterestCostRadio" name="variables" checked>
+  <label for="accruedInterestCostRadio">Accrued Interest Cost</label>
+
+  <input type="radio" id="annualInterestRateRadio" name="variables">
+  <label for="annualInterestRateRadio">Annual Interest Rate</label>
+
+  <input type="radio" id="holdingDaysRadio" name="variables">
+  <label for="holdingDaysRadio">Holding Days</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Day Count Fraction (DCF)</label>
+  <select name="" id="v1">
+    <option value="days360">360 Days</option>
+    <option value="days365">365 Days</option>
+  </select><br><br>
+  
+  <label for="v2" id="variable2">Investment Amount ($)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Annual Interest Rate (%)</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">Holding Days</label>
+  <input type="number" id="v4"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
